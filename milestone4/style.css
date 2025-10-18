@@ -4,7 +4,7 @@
     grid-auto-rows: 400px;
 
 }
-* {border: 2px solid pink;
+* {border: 2px solid rgb(248, 167, 205);
 
 }
 .box1 { grid-row: 1/3;
