@@ -70,3 +70,6 @@ h2 {
 body {
     margin: 0px;
 }
+.top-space {
+  height: 70px;
+}
