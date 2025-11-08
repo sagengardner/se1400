@@ -123,6 +123,7 @@ nav a {
 }
 nav a:hover {
   background-color: #BA1C21; 
+  transition: background-color .5s ease-out;
 }
 * { 
     box-sizing: border-box; 
@@ -178,6 +179,12 @@ nav ul {
     width: 100%;
     height: auto;
     padding-left: 0px;
+  }
+  video {
+    float: none;
+    margin: 0;
+    width: 100%;
+    height: auto;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -249,4 +256,8 @@ td {
 }
 tr:nth-of-type(even) {
   background-color: #F3F3F3;
+}
+video {
+  float: right;
+  margin-left: 2em;
 }

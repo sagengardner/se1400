@@ -73,3 +73,7 @@ body {
 .top-space {
   height: 70px;
 }
+#simone {
+    border-radius: 10%;
+    width: 500px;
+}
