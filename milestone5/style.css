@@ -73,7 +73,45 @@ body {
 .top-space {
   height: 70px;
 }
-#pinkflip {
+#pinkflip img{
     border-radius: 10%;
     width: 500px;
+}
+@media screen and (max-width: 992px) {
+  #wrapper {
+    grid-template-columns: 1fr 768px 1fr;
+  }
+  #pinkflip img {
+    border-radius: 10%;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .left-column,
+  .right-column {
+    display: none;
+  }
+
+  .center-column {
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+    #pinkflip img {
+    border-radius: 10%;
+    width: 300px;
+  }
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
 }
