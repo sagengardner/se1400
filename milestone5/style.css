@@ -1,7 +1,7 @@
 #wrapper {
     display: grid;
     grid-template-columns: 1fr minmax(100px, 800px) minmax(80px, 400px) 1fr;
-
+    padding-left: 20px;
 }
 body {
     background: linear-gradient(to left, rgb(248, 167, 205),rgb(250, 250, 139));
@@ -15,6 +15,7 @@ body {
 .box2 {
     grid-column: 2;
     grid-row: 1;
+    text-align: center;
 }
 
 .box3 {
@@ -41,6 +42,8 @@ nav {
 nav span {
     float:right;
     margin-right: 4px;
+    line-height: 0;
+    margin-top: 2px;
 }
 nav a {
     text-decoration: none;
@@ -51,15 +54,23 @@ nav a {
     margin: 10px;
     font-weight: bold;
 }
+/* nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+} */
 h2 {
     border: .5px solid rgb(84, 84, 84);
     border-radius: 100px;
-    padding: 5px;
+    padding: 5px 15px;
     display: inline;
 }
 #cgn {
     grid-row: 2;
     grid-column: 2;
+    text-align: center;
 }
 
 #ncaa {
@@ -79,7 +90,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   #wrapper {
-    grid-template-columns: 1fr 768px 1fr;
+    grid-template-columns: 10px 530px 1fr;
   }
   #pinkflip img {
     border-radius: 10%;
@@ -99,19 +110,28 @@ body {
   .center-column {
     width: 100%;
   }
-  nav ul {
+  /* nav ul {
     flex-direction: column;
     align-items: center;
-  }
+  } */
     #pinkflip img {
     border-radius: 10%;
     width: 300px;
   }
 }
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
+@media screen and (max-width: 570px) {
+  #wrapper {
+   display: block;
+  }
+nav a {
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
 }
+nav {
+    margin-top: 10px;
+}
+
+}
+
+
