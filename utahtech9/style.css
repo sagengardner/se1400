@@ -80,7 +80,6 @@ footer {
 }
 
 #wrapper {
-display: grid;
   grid-auto-rows: minmax(0px, auto);
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
@@ -111,6 +110,14 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+#alumnihero {
+  background-image: url("images/alumnihero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+
 }
 
 nav a {
@@ -230,14 +237,7 @@ label {
   width: 10rem;
   grid-column: 2 / 3;
 }
-#alumnihero {
-  background-image: url("images/alumnihero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 100%;
-}
+
 table {
   margin: 0 auto;
   border: 1px solid #424242;
