@@ -112,6 +112,14 @@ img {
     background-repeat: no-repeat;
     background-position: center;
 }
+#alumnihero {
+  background-image: url("images/alumnihero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+
+}
 
 nav a {
     text-decoration: none;
@@ -223,14 +231,7 @@ label {
   width: 10rem;
   grid-column: 2 / 3;
 }
-#alumnihero {
-  background-image: url("images/alumnihero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 100%;
-}
+
 table {
   margin: 0 auto;
   border: 1px solid #424242;
