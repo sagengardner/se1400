@@ -119,7 +119,13 @@ img {
   height: 300px;
 
 }
-
+#shophero {
+  background-image: url("images/shophero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
 nav a {
     text-decoration: none;
     color: #FFFFFF;
@@ -176,7 +182,8 @@ nav ul {
 }
 #homehero,
   #studenthero,
-  #facultyhero {
+  #facultyhero
+  #shophero {
     grid-row: 2 / 3;
     grid-column: 5 / 8;
     height: auto;
@@ -205,7 +212,8 @@ nav ul {
   }
   #homehero,
   #studenthero,
-  #facultyhero {
+  #facultyhero
+  #alumnihero {
     display: none;
   }
 }
