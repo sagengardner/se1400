@@ -200,6 +200,9 @@ nav ul {
     width: 100%;
     height: auto;
   }
+  #shoppingcart {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (max-width: 600px) {
      header h1 {
@@ -215,6 +218,9 @@ nav ul {
   #facultyhero
   #alumnihero {
     display: none;
+  }
+  #shoppingcart {
+    grid-template-columns: 1fr;
   }
 }
 form {
@@ -268,4 +274,12 @@ tr:nth-of-type(even) {
 video {
   float: right;
   margin-left: 2em;
+}
+#shoppingcart img {
+  width: 100%;
+  height: auto;
+}
+#shoppingcart {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }

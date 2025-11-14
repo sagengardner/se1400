@@ -10,6 +10,14 @@
 </head>
 
 <body>
+    <script>
+  window.SnipcartSettings = {
+    publicApiKey: "ZTIzNmE4MGYtNGI2OS00MGUxLThiZjItM2M3ZWM1NTVmN2U1NjM4OTg0ODEwMzA3NTMyNzc0",
+    loadStrategy: "on-user-interaction",
+  };
+
+  (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+</script>
     <div id="wrapper">
         <div id="bluebar"></div>
         <div id="greybar"></div>
@@ -44,7 +52,141 @@
         </div>
         <main>
             <h2>Utah Tech Bookstore</h2>
-            
+            <div id="shoppingcart">
+                <div>
+                    <img src="images/._hoodie1.jpg" class="" alt="Heather grey hoodie with Utah Tech logo">
+  <h3>Utah Tech Hoodie</h3>
+  <p>Heather grey hoodie with Utah Tech logo</p>
+  <p>$79.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="grey-hoodie"
+    data-item-price="79.99"
+    data-item-description="Heather grey hoodie with Utah Tech logo"
+    data-item-image="images/hoodie1.jpg"
+    data-item-name="Utah Tech Hoodie">
+    Add to cart
+  </button>
+</div>
+<div>
+  <img src="images/hoodie2.jpg" alt="Red Utah Tech hoodie">
+  <h3>Red Utah Tech Hoodie</h3>
+  <p>Soft red fleece hoodie with bold Utah Tech lettering</p>
+  <p>$69.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="red-hoodie"
+    data-item-price="69.99"
+    data-item-description="Soft red fleece hoodie with bold Utah Tech lettering"
+    data-item-image="images/hoodie2.jpg"
+    data-item-name="Red Utah Tech Hoodie">
+    Add to cart
+  </button>
+</div>
+
+<div>
+  <img src="images/shirt1.jpg" alt="Navy Utah Tech T-shirt">
+  <h3>Navy Utah Tech T-Shirt</h3>
+  <p>Classic navy tee with white Utah Tech logo</p>
+  <p>$24.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="navy-shirt"
+    data-item-price="24.99"
+    data-item-description="Classic navy tee with white Utah Tech logo"
+    data-item-image="images/shirt1.jpg"
+    data-item-name="Navy Utah Tech T-Shirt">
+    Add to cart
+  </button>
+</div>
+
+<div>
+  <img src="images/shirt2.jpg" alt="White Utah Tech T-shirt">
+  <h3>White Utah Tech T-Shirt</h3>
+  <p>Lightweight white tee with full-color Trailblazers emblem</p>
+  <p>$22.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="white-shirt"
+    data-item-price="22.99"
+    data-item-description="Lightweight white tee with full-color Trailblazers emblem"
+    data-item-image="images/shirt2.jpg"
+    data-item-name="White Utah Tech T-Shirt">
+    Add to cart
+  </button>
+</div>
+
+<div>
+  <img src="images/hat1.jpg" alt="Utah Tech red baseball cap">
+  <h3>Utah Tech Red Cap</h3>
+  <p>Adjustable red baseball cap with embroidered UT logo</p>
+  <p>$19.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="red-cap"
+    data-item-price="19.99"
+    data-item-description="Adjustable red baseball cap with embroidered UT logo"
+    data-item-image="images/hat1.jpg"
+    data-item-name="Utah Tech Red Cap">
+    Add to cart
+  </button>
+</div>
+
+<div>
+  <img src="images/hat2.jpg" alt="Blue Utah Tech snapback hat">
+  <h3>Blue UT Snapback</h3>
+  <p>Structured blue snapback with Trailblazers patch</p>
+  <p>$24.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="blue-snapback"
+    data-item-price="24.99"
+    data-item-description="Structured blue snapback with Trailblazers patch"
+    data-item-image="images/hat2.jpg"
+    data-item-name="Blue UT Snapback">
+    Add to cart
+  </button>
+</div>
+
+<div>
+  <img src="images/mug1.jpg" alt="Utah Tech ceramic mug">
+  <h3>Utah Tech Ceramic Mug</h3>
+  <p>11oz ceramic mug featuring the Trailblazers logo</p>
+  <p>$14.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="ceramic-mug"
+    data-item-price="14.99"
+    data-item-description="11oz ceramic mug featuring the Trailblazers logo"
+    data-item-image="images/mug1.jpg"
+    data-item-name="Utah Tech Ceramic Mug">
+    Add to cart
+  </button>
+</div>
+
+<div>
+  <img src="images/bottle1.jpg" alt="Utah Tech water bottle">
+  <h3>Utah Tech Water Bottle</h3>
+  <p>Stainless steel insulated bottle with laser-engraved logo</p>
+  <p>$29.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="steel-bottle"
+    data-item-price="29.99"
+    data-item-description="Stainless steel insulated bottle with laser-engraved logo"
+    data-item-image="images/bottle1.jpg"
+    data-item-name="Utah Tech Water Bottle">
+    Add to cart
+  </button>
+</div>
+
+<div>
+  <img src="images/sticker1.jpg" alt="Utah Tech sticker pack">
+  <h3>Trailblazer Sticker Pack</h3>
+  <p>Pack of 6 vinyl stickers featuring Utah Tech icons</p>
+  <p>$8.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="sticker-pack"
+    data-item-price="8.99"
+    data-item-description="Pack of 6 vinyl stickers featuring Utah Tech icons"
+    data-item-image="images/sticker1.jpg"
+    data-item-name="Trailblazer Sticker Pack">
+    Add to cart
+  </button>
+</div>
+            </div>
         </main>
 
 
