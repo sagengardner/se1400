@@ -80,7 +80,6 @@ footer {
 }
 
 #wrapper {
-
   grid-auto-rows: minmax(0px, auto);
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
@@ -112,7 +111,6 @@ img {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 #alumnihero {
   background-image: url("images/alumnihero.jpg");
   background-size: cover;
